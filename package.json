@@ -1,0 +1,23 @@
+{
+  "name": "tarea1angular",
+  "version": "1.0.0",
+  "description": "Primera tarea de angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nuevaAplicacion": "ng new my-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisMejia1020/Tarea1Angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisMejia1020/Tarea1Angular/issues"
+  },
+  "homepage": "https://github.com/LuisMejia1020/Tarea1Angular#readme",
+  "dependencies": {
+    "@angular/cli": "^15.1.6"
+  }
+}
