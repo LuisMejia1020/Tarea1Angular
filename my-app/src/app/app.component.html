@@ -1,46 +1,14 @@
-
+<app-navegacion></app-navegacion>
     <div class="background">
       <h1>{{ title }} Lea aqui</h1>
       <p>{{ descripcion }} </p>
       <p>{{ estrenos }} </p>
-       <p>{{ noticias }}</p>
+     
     </div>
 
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">{{ title }}</h5>
-        <p class="card-text">{{ descripcion }}.</p>
-        <a href={{enlace.enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
-      </div>
-    </div>
+   <app-mangas></app-mangas>
+ 
 
-
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">{{ mangas[0].nombre }}</h5>
-        <p class="card-text">{{ descripcion }}.</p>
-        <a href={{enlace.enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">{{ mangas[1].nombre }}</h5>
-        <p class="card-text">{{ descripcion }}.</p>
-        <a href={{enlace.enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">{{ mangas[2].nombre }}</h5>
-        <p class="card-text">{{ descripcion }}.</p>
-        <a href={{enlace.enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
-      </div>
-    </div>
-
-    
-  
-
+   
 
 <router-outlet></router-outlet>

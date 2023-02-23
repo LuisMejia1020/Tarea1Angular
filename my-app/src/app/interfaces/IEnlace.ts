@@ -8,7 +8,11 @@ export interface IEnlace {
     nombreCreador: string,
     emision: boolean,
     animacion: boolean,
-    descripcion: string
+    explicacion: string,
+    genero: string,
+    imagen: string,
+    precio: number
+
 
   }
 
