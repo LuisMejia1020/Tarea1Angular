@@ -1,4 +1,4 @@
-<p>mangas works!</p>
+<p>Tu seccion de mangas esta aca.</p>
 
 <div class="container-fluid body">
     <div class="row">
@@ -6,8 +6,10 @@
             <div class="card-body">
               <h5 class="card-title">{{ mangas[0].nombre }}</h5>
               <p class="card-text">{{  mangas[0].explicacion }}.</p>
-              <img  src="images/towerofgod.jpg" alt="Tower of god" width="300" height="150">
-              <a href={{enlace.enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
+              <img  src={{mangas[0].imagen}} alt="Tower of god" width="300" height="200">
+              <br>
+              <br>
+              <a href={{mangas[0].enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
               <p class="card-text">{{  mangas[0].precio }}.</p>
             </div>
         </div>
@@ -16,8 +18,10 @@
             <div class="card-body">
               <h5 class="card-title">{{ mangas[1].nombre }}</h5>
               <p class="card-text">{{  mangas[1].explicacion  }}.</p>
-              <img  src="images/towerofgod.jpg" alt="Tower of god" width="300" height="150">
-              <a href={{enlace.enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
+              <img  src={{mangas[1].imagen}} alt="Naruto" width="300" height="200">
+              <br>
+              <br>
+              <a href={{mangas[1].enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
               <p class="card-text">{{  mangas[1].precio }}.</p>
             </div>
         </div>
@@ -26,8 +30,46 @@
             <div class="card-body">
               <h5 class="card-title">{{ mangas[2].nombre }}</h5>
               <p class="card-text">{{  mangas[2].explicacion  }}.</p>
-              <img  src="images/towerofgod.jpg" alt="Tower of god" width="300" height="150">
-              <a href={{enlace.enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
+              <img  src={{mangas[2].imagen}} alt="Jujutsu Kaisen" width="300" height="150">
+              <br>
+              <br>
+              <a href={{mangas[2].enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
+              <p class="card-text">{{  mangas[2].precio }}.</p>
+            </div>
+        </div>
+
+        <div class="card body" style="width: 28rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{ mangas[3].nombre }}</h5>
+              <p class="card-text">{{  mangas[3].explicacion  }}.</p>
+              <img  src={{mangas[3].imagen}} alt="One Piece" width="300" height="150">
+              <br>
+              <br>
+              <a href={{mangas[3].enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
+              <p class="card-text">{{  mangas[2].precio }}.</p>
+            </div>
+        </div>
+
+        <div class="card body" style="width: 28rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{ mangas[4].nombre }}</h5>
+              <p class="card-text">{{  mangas[4].explicacion  }}.</p>
+              <img  src={{mangas[4].imagen}} alt="Vinland Saga" width="300" height="200">
+              <br>
+              <br>
+              <a href={{mangas[4].enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
+              <p class="card-text">{{  mangas[2].precio }}.</p>
+            </div>
+        </div>
+
+        <div class="card body" style="width: 28rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{ mangas[5].nombre }}</h5>
+              <p class="card-text">{{  mangas[5].explicacion  }}.</p>
+              <img  src={{mangas[5].imagen}} alt="Record of Ragnarok" width="300" height="200">
+              <br>
+              <br>
+              <a href={{mangas[5].enlace}} class="btn btn-primary">{{ enlace.msg }}</a> 
               <p class="card-text">{{  mangas[2].precio }}.</p>
             </div>
         </div>

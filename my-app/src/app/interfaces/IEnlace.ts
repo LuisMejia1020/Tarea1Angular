@@ -11,7 +11,9 @@ export interface IEnlace {
     explicacion: string,
     genero: string,
     imagen: string,
-    precio: number
+    precio: number,
+    enlace: string
+    
 
 
   }
