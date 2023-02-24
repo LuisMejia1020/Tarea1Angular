@@ -13,9 +13,13 @@ export interface IEnlace {
     imagen: string,
     precio: number,
     enlace: string
-    
+  }
 
-
+  export interface INoticias {
+    titular: string,
+    imagen: string,
+    msg: string,
+    enlace: string
   }
 
   

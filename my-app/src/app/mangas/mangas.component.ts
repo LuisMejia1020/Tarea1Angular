@@ -77,6 +77,36 @@ export class MangasComponent {
     precio: 9.99,
     enlace:'https://record-ragnarok.com'},
 
+    {nombre: 'Berserk',
+    nombreCreador: 'Kentaro Miura',
+    emision: true,
+    animacion: true,
+    explicacion: 'La historia es de Guts, un guerrero solitario y brutal, en la busqueda por la venganza de su amigo y companero Griffith que lo traiciono y sacrifico a sus companeros para conseguir poderes sobrenaturales y convertirse en un dios',
+    genero:'Fantasia oscura',
+    imagen:'https://www.enjpg.com/img/2020/berserk-8.jpg',
+    precio: 9.99,
+    enlace:'https://readberserk.com'},
+
+    {nombre: 'My Hero Academia',
+    nombreCreador: 'kohei Horikoshi',
+    emision: true,
+    animacion: true,
+    explicacion: 'La historia de Midoriya, un chico que nace sin su don en un mundo regido por ellos, su sueno es convertirse en el hereo #1 de todos',
+    genero:'Fantasia oscura',
+    imagen:'https://i2.wp.com/www.senpai.com.mx/wp-content/uploads/2022/01/My-Hero-Academia-manga-volumen-33.jpg?resize=1280%2C2013&ssl=1',
+    precio: 9.99,
+    enlace:'https://w32.readheroacademia.com'},
+
+    {nombre: 'Blue Lock',
+    nombreCreador: 'Muniyoki Kanishiro',
+    emision: true,
+    animacion: true,
+    explicacion: 'Buscar ser el delantero #1 en todo el Japon, su sueno es ser Campeon del Mundo',
+    genero:'shonen',
+    imagen:'https://animecorner.me/wp-content/uploads/2023/01/White-team.jpg',
+    precio: 9.99,
+    enlace:'https://w17.readbluelock.com/?2023-02-24'},
+
   ]
 
 }
