@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { MangasComponent } from './mangas/mangas.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
 import { NoticiasComponent } from './noticias/noticias.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MangasComponent,
     NavegacionComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
