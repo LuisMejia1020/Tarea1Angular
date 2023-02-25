@@ -22,4 +22,10 @@ export interface IEnlace {
     enlace: string
   }
 
+  export interface IContacto {
+    nombre: string,
+    telefono: number,
+    direccion: string
+  }
+
   

@@ -7,6 +7,7 @@ import { MangasComponent } from './mangas/mangas.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     MangasComponent,
     NavegacionComponent,
     NoticiasComponent,
-    FooterComponent
+    FooterComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
