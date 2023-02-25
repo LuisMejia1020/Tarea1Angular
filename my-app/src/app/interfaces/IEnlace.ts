@@ -4,6 +4,7 @@ export interface IEnlace {
   }
 
   export interface IMangas {
+    id: number,
     nombre: string,
     nombreCreador: string,
     emision: boolean,

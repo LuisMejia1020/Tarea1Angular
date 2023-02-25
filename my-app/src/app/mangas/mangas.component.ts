@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { IMangas } from '../interfaces/IEnlace';
 import { IEnlace } from '../interfaces/IEnlace';
 
-
-
 @Component({
   selector: 'app-mangas',
   templateUrl: './mangas.component.html',
@@ -17,7 +15,8 @@ export class MangasComponent {
   }
 
   mangas: IMangas[] = [
-    {nombre: 'Tower of God',
+    {id:1,
+    nombre: 'Tower of God',
     nombreCreador: 'SIU',
     emision: true,
     animacion: true,
@@ -27,7 +26,8 @@ export class MangasComponent {
     precio: 9.99,
     enlace:'https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95&page=1'},
 
-    {nombre: 'Naruto',
+    {id:2,
+    nombre: 'Naruto',
     nombreCreador: 'Kishimoto',
     emision: true,
     animacion: true,
@@ -37,7 +37,8 @@ export class MangasComponent {
     precio: 9.99,
     enlace:'https://narutoshippuden.online'},
 
-    {nombre: 'Jujutsu Kaisen',
+    {id:3,
+    nombre: 'Jujutsu Kaisen',
     nombreCreador: 'Gege Akutami',
     emision: true,
     animacion: true,
@@ -47,7 +48,8 @@ export class MangasComponent {
     precio: 9.99,
     enlace:'https://www.jujustukaisen.com'},
 
-    {nombre: 'One Piece',
+    {id:4,
+    nombre: 'One Piece',
     nombreCreador: 'Oda',
     emision: true,
     animacion: true,
@@ -57,7 +59,8 @@ export class MangasComponent {
     precio: 9.99,
     enlace:'https://ww3.read-onepiece.net'},
 
-    {nombre: 'Vinland Saga',
+    {id:5,
+    nombre: 'Vinland Saga',
     nombreCreador: 'Anonimo',
     emision: true,
     animacion: true,
@@ -67,7 +70,8 @@ export class MangasComponent {
     precio: 9.99,
     enlace:'https://read-vinlandsaga.com'},
 
-    {nombre: 'Record of Ragnarok',
+    {id:6,
+    nombre: 'Record of Ragnarok',
     nombreCreador: 'Anonimo',
     emision: true,
     animacion: true,
@@ -77,7 +81,8 @@ export class MangasComponent {
     precio: 9.99,
     enlace:'https://record-ragnarok.com'},
 
-    {nombre: 'Berserk',
+    {id:7,
+    nombre: 'Berserk',
     nombreCreador: 'Kentaro Miura',
     emision: true,
     animacion: true,
@@ -87,7 +92,8 @@ export class MangasComponent {
     precio: 9.99,
     enlace:'https://readberserk.com'},
 
-    {nombre: 'My Hero Academia',
+    {id:8,
+    nombre: 'My Hero Academia',
     nombreCreador: 'kohei Horikoshi',
     emision: true,
     animacion: true,
@@ -97,7 +103,8 @@ export class MangasComponent {
     precio: 9.99,
     enlace:'https://w32.readheroacademia.com'},
 
-    {nombre: 'Blue Lock',
+    {id:9,
+    nombre: 'Blue Lock',
     nombreCreador: 'Muniyoki Kanishiro',
     emision: true,
     animacion: true,
@@ -108,5 +115,4 @@ export class MangasComponent {
     enlace:'https://w17.readbluelock.com/?2023-02-24'},
 
   ]
-
 }
