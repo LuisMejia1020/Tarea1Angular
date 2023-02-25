@@ -2,10 +2,25 @@ div{
 
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     color: white;
     text-align: justify;
     padding-left: 3%;
+    
+  }
+
+  .news-section {
+    background-image: url('https://wallpapers.com/images/hd/naruto-black-itachi-uchiha-sharingan-kqgbm3h1gm2h7h5s.jpg' );
+    background-size: cover;
+    background-position: right;
+    color: #fff;
+    text-align: justify;
+    padding: 50px 0;
+  }
+  
+  .news-section .container {
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   h2{

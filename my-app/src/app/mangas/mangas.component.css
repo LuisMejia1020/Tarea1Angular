@@ -5,7 +5,19 @@ div{
     font-size: 20px;
     color: white;
     text-align: justify;
+    text-decoration: solid;
     padding-left: 3%;
+    background-image: url('https://img5.goodfon.com/wallpaper/nbig/3/15/pinocchio-sinoalice-vzgliad-noch-chiornyi-fon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  .card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
   h2{

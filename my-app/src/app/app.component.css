@@ -1,6 +1,14 @@
-.background{
+div{
     background-color: black;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     color: white;
+    text-align: center;
+    padding-left: 3%;
+    background-image: url('https://wallpapercave.com/wp/wp5203578.jpg');
+    background-position: right;
+  }
 
-}
+  h2{
+    text-align: center;
+  }

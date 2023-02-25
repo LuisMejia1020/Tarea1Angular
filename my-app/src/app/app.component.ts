@@ -12,7 +12,6 @@ export class AppComponent {
   title = 'TCG Japan Store';
   descripcion = 'Todo lo que quieras encontrar sobre los ultimos estrenos de japon'
   estrenos = 'cada manga se estrena semanalmente'
-  
 }
 
 
