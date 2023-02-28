@@ -10,7 +10,7 @@ import { IEnlace } from '../interfaces/IEnlace';
 export class MangasComponent {
   DescripcionManga = 'Esta es una aplicacion para leer mangas en linea de Japon'
   enlace: IEnlace = {
-    msg: 'bienvenido',
+    msg: 'leeme',
     enlace:'https://www.crunchyroll.com'
   }
 
@@ -114,5 +114,11 @@ export class MangasComponent {
     precio: 9.99,
     enlace:'https://w17.readbluelock.com/?2023-02-24'},
 
-  ]
+  ] 
+
+  public carrito: IMangas[] = [];
+  public agregarAlCarrito(manga: IMangas): void {
+    this.carrito.push(manga);
+  }
+  
 }

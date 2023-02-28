@@ -29,4 +29,11 @@ export interface IEnlace {
     direccion: string
   }
 
+  export interface ICarritoItem {
+    producto: string;
+    precio: number;
+    cantidad: number;
+    subtotal: number;
+  }
+
   
