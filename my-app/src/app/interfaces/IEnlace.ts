@@ -13,7 +13,9 @@ export interface IEnlace {
     genero: string,
     imagen: string,
     precio: number,
-    enlace: string
+    enlace: string,
+    cantidad: number,
+    subtotal: number
   }
 
   export interface INoticias {
@@ -34,6 +36,12 @@ export interface IEnlace {
     precio: number;
     cantidad: number;
     subtotal: number;
+  }
+
+  export interface ICheckout {
+    nombre: string
+    direccion: string
+    tarjeta: string
   }
 
   

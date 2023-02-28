@@ -138,12 +138,19 @@
         <td><img [src]="manga.imagen" width="300" height="200"></td>
         <td>{{ manga.nombre }}</td>
         <td>{{ manga.nombreCreador }}</td>
-        <td>{{ manga.precio }}</td>
-        <td><button (click)="agregarAlCarrito(manga)">Agregar al carrito</button></td>
+        <td>{{ manga.precio | currency }}</td>
+        <td><input type="number" [(ngModel)]="manga.cantidad" (ngModelChange)="actualizarSubtotal(manga)"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td><strong>Total:</strong></td>
+        <td>{{total() | currency}}</td>
+        <button (click)="comprar()">Comprar</button>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  
-   
-  
 </div>
+
+

@@ -2,6 +2,13 @@ import { Component } from '@angular/core';
 import { IMangas } from '../interfaces/IEnlace';
 import { IEnlace } from '../interfaces/IEnlace';
 
+interface ICarritoItem {
+  producto: string;
+  precio: number;
+  cantidad: number;
+  subtotal: number;
+}
+
 @Component({
   selector: 'app-mangas',
   templateUrl: './mangas.component.html',
@@ -24,7 +31,9 @@ export class MangasComponent {
     genero: 'fantasia',
     imagen:'https://m.media-amazon.com/images/M/MV5BZGM4NjE1OWYtNzcwMC00ZGY0LWE4NjEtZTgzYzY4YWU5M2E3XkEyXkFqcGdeQXVyMzI2Mjc1NjQ@._V1_FMjpg_UX1000_.jpg',
     precio: 9.99,
-    enlace:'https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95&page=1'},
+    enlace:'https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95&page=1',
+    cantidad: 0,
+    subtotal: 0},
 
     {id:2,
     nombre: 'Naruto',
@@ -35,7 +44,9 @@ export class MangasComponent {
     genero:'fantasia',
     imagen:'https://m.media-amazon.com/images/M/MV5BZGFiMWFhNDAtMzUyZS00NmQ2LTljNDYtMmZjNTc5MDUxMzViXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg',
     precio: 9.99,
-    enlace:'https://narutoshippuden.online'},
+    enlace:'https://narutoshippuden.online',
+    cantidad: 0,
+    subtotal: 0},
 
     {id:3,
     nombre: 'Jujutsu Kaisen',
@@ -46,7 +57,9 @@ export class MangasComponent {
     genero:'fantasiq',
     imagen:'https://oyster.ignimgs.com/wordpress/stg.ign.com/2021/02/jujutsu-kaisen.jpg',
     precio: 9.99,
-    enlace:'https://www.jujustukaisen.com'},
+    enlace:'https://www.jujustukaisen.com',
+    cantidad: 0,
+    subtotal: 0},
 
     {id:4,
     nombre: 'One Piece',
@@ -57,7 +70,9 @@ export class MangasComponent {
     genero:'Fantasia',
     imagen:'https://occ-0-41-3933.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQhjYoqXrAWkKlREh6UPuZn7gecckI33LLRzbt2ptacSD19smeXAzzNOtL2BXpOmDmjCWf3wFrSjwob8p50aYpiPS5S4J_yRzrY7.jpg?r=066',
     precio: 9.99,
-    enlace:'https://ww3.read-onepiece.net'},
+    enlace:'https://ww3.read-onepiece.net',
+    cantidad: 0,
+    subtotal: 0},
 
     {id:5,
     nombre: 'Vinland Saga',
@@ -68,7 +83,9 @@ export class MangasComponent {
     genero:'Fantasia',
     imagen:'https://sportshub.cbsistatic.com/i/2022/06/08/94653059-d16f-4567-b63a-a924c90af88f/vinland-saga-season-2.jpg?auto=webp&width=707&height=1000&crop=0.707:1,smart',
     precio: 9.99,
-    enlace:'https://read-vinlandsaga.com'},
+    enlace:'https://read-vinlandsaga.com',
+    cantidad: 0,
+    subtotal: 0},
 
     {id:6,
     nombre: 'Record of Ragnarok',
@@ -79,7 +96,9 @@ export class MangasComponent {
     genero:'Fantasia',
     imagen:'https://preview.redd.it/5zj753tel6q81.jpg?width=464&format=pjpg&auto=webp&s=836075dc0e8429565a400b362170d4332bb2b088',
     precio: 9.99,
-    enlace:'https://record-ragnarok.com'},
+    enlace:'https://record-ragnarok.com',
+    cantidad: 0,
+    subtotal: 0},
 
     {id:7,
     nombre: 'Berserk',
@@ -90,7 +109,9 @@ export class MangasComponent {
     genero:'Fantasia oscura',
     imagen:'https://www.enjpg.com/img/2020/berserk-8.jpg',
     precio: 9.99,
-    enlace:'https://readberserk.com'},
+    enlace:'https://readberserk.com',
+    cantidad: 0,
+    subtotal: 0},
 
     {id:8,
     nombre: 'My Hero Academia',
@@ -101,7 +122,9 @@ export class MangasComponent {
     genero:'Fantasia oscura',
     imagen:'https://i2.wp.com/www.senpai.com.mx/wp-content/uploads/2022/01/My-Hero-Academia-manga-volumen-33.jpg?resize=1280%2C2013&ssl=1',
     precio: 9.99,
-    enlace:'https://w32.readheroacademia.com'},
+    enlace:'https://w32.readheroacademia.com',
+    cantidad: 0,
+    subtotal: 0},
 
     {id:9,
     nombre: 'Blue Lock',
@@ -112,13 +135,52 @@ export class MangasComponent {
     genero:'shonen',
     imagen:'https://animecorner.me/wp-content/uploads/2023/01/White-team.jpg',
     precio: 9.99,
-    enlace:'https://w17.readbluelock.com/?2023-02-24'},
+    enlace:'https://w17.readbluelock.com/?2023-02-24',
+    cantidad: 0,
+    subtotal: 0},
 
   ] 
 
-  public carrito: IMangas[] = [];
-  public agregarAlCarrito(manga: IMangas): void {
-    this.carrito.push(manga);
+   carrito: IMangas[] = [];
+   agregarAlCarrito(manga: IMangas): void {
+    const index = this.carrito.findIndex(item => item.id === manga.id);
+    if (index !== -1) {
+      this.carrito[index].cantidad++;
+    } else {
+      this.carrito.push({ ...manga, cantidad: 1 });
+    }
   }
-  
+
+  eliminarDelCarrito(manga: IMangas): void {
+    const index = this.carrito.findIndex(item => item.id === manga.id);
+    if (index !== -1) {
+      this.carrito.splice(index, 1);
+    }
+  }
+
+  public actualizarSubtotal(manga: IMangas) {
+    manga.subtotal = manga.precio * manga.cantidad;
+  }
+
+  public eliminarItem(manga: IMangas) {
+    const index = this.mangas.indexOf(manga);
+    this.mangas.splice(index, 1);
+  }
+
+  public total(): number {
+    let total = 0;
+    this.mangas.forEach(manga => {
+      total += manga.subtotal;
+    });
+    return total;
+  }
+
+  comprar(): void {
+    // Lógica de compra
+    this.carrito = [];
+    alert('¡Gracias por tu compra!');
+  }
+
+ 
+ 
 }
