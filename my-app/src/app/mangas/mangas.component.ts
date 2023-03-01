@@ -180,7 +180,5 @@ export class MangasComponent {
     this.carrito = [];
     alert('¡Gracias por tu compra!');
   }
-
- 
  
 }
